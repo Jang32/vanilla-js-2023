@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+#background-image {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#weather {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-weight: 600;
+  color: orangered;
+}
+body {
+  width: 98%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+input {
+  background: none;
+  border:none;
+  border-bottom: 1.5px solid white;
+  color:aliceblue;
+}
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+input:focus {
+  outline:none;
+}
+.login-form > input {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.login-greeting, 
+.todo-list {
+  color: aliceblue;
+}
+.todo-list {
+  width: 18%;
+  min-height: 60px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.todo-list button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: mediumvioletred;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  align-items: center;
+  text-align: center;
+}
+.quote > span:last-child {
+  font-weight: 600;
+}
